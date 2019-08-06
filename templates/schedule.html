@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:style="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>PARSER</title>
+
+</head>
+<body style="background-color: gray">
+
+<ul style="left:1%; top:25px; right: 50%; width: 500px; position: absolute;">
+
+{% for item in out %}
+    <li class="day">{{item}}</li>
+{% endfor %}
+
+
+
+
+</ul>
+
+<script>
+    a = document.getElementsByClassName('subj');
+    b = document.getElementsByClassName('day');
+    i = 0;
+    for (var x in b){
+        x.style.left = 2%;
+           
+        for (let i; i < 4; i++){
+            a[i].style.left = 5%;
+        }
+        i = i + 4 ;
+    }
+    
+    b.style.left = 20%
+    
+    
+</script>
+
+
+</body>
+</html>

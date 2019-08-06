@@ -1,0 +1,40 @@
+    .content {
+        width: 500px;
+        height: auto;
+        left: 25%;
+        margin: inherit;
+        border: 4px double black;
+        font-size: 11pt;
+        position: relative;
+        }
+    .content:hover{
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+        animation: shadow 1s infinite alternate;}
+    .link {
+    width: 100px;
+    height: auto;
+    left: 50%;
+    border: 4px double black;
+    font-size: 11pt;
+    position: relative;
+    }
+
+
+    @keyframes shadow {
+     from {
+        box-shadow: 0 0 55px 10px white;
+     }
+     to {
+        box-shadow: 0 0 90px 20px white;
+     }
+
+     @keyframes move {
+     from {
+        left: 50%;
+     }
+     to {
+        left: 5%;
+     }
+
